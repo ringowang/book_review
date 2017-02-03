@@ -1,0 +1,8 @@
+<%= simple_form_for @book, html: {multipart: true} do |f|%>  <%# multipart是用来上传文件的 %>
+  <%# :category_id 会变成params[:category_id]参数传到controller %>
+  <%= select_tag( :category_id, options_for_select(@categories), prompt: "Select a category" ) %>
+  <%= f.input :title, label: "Book Title" %>
+  <%= f.input :description %>
+  <%= f.input :author %>
+  <%= f.button :submit %>
+<% end %>
