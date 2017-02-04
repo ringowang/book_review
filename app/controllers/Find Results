@@ -1,0 +1,13 @@
+Searching 506 files for "destory"
+
+/Users/wangboguo/Downloads/new_workspace/book_review/app/controllers/reviews_controller.rb:
+   31  
+   32    def destroy
+   33:     @review.destroy
+   34      redirect_to book_path(@book)
+   35    end
+
+/Users/wangboguo/Downloads/new_workspace/book_review/log/development.log:
+    <binary>
+
+2 matches across 2 files
