@@ -56,3 +56,7 @@ gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'paperclip'
+
+group :production do
+  gem 'pg'
+end
