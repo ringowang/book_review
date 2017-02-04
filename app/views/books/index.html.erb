@@ -1,0 +1,19 @@
+<h1 class="current-category"><%= params[:category] %></h1>
+<% if @books.count.zero? %>
+  <h1>There are no books currently in this category</h1>
+<% else %>
+  <div class="row">
+
+    <% @books.each do |book| %>
+
+      <div class="col-md-3">
+        <%# book_path(book)必须要加(book)不然不知道是哪一个book_path %>
+        <a href="/books/<%= book.id %>">
+          <%= image_tag book.book_img.url(:book_index), class: "book" %>
+        </a>
+      </div>
+
+    <% end %>
+
+  </div>
+<% end %>
